@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  background-color: rgb(148, 143, 136);
+  
+}
+.contact {
+  color: rgb(0, 0, 0);
+}
+.contUs {
+  color: blue;
+}
+.color {
+    width: 25%;
+  background-color: rgb(197, 188, 188);
+}
+body {
+    width: 100%;
+    background-color: bisque;
+}
