@@ -1,0 +1,10 @@
+*{
+    list-style: none;
+}
+.header {
+    width: 100%;
+    color: aqua;
+    background-color: black;
+    padding: 10px;
+    position: sticky;
+}
