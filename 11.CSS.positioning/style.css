@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.boxesbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.boxes {
+  background-color: antiquewhite;
+  width: 75%;
+  height: 70%;
+  position: relative;
+}
+.box {
+  width: 50px;
+  height: 50px;
+}
+.box-a {
+  background-color: red;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+.box-b {
+  background-color: orangered;
+  position: absolute;
+  top: 70px;
+  left: 70px;
+}
+.box-c {
+  background-color: yellow;
+  position: absolute;
+  top: 90px;
+  left: 90px;
+}
+.box-d {
+  background-color: orangered;
+  position: sticky;
+  top: 0;
+  left: 100%;
+}
+.box-e {
+  background-color: green;
+  position: absolute;
+  bottom: 10px;
+  right: 300px;
+}
+.box-f {
+  background-color: brown;
+  position: fixed;
+  right: 0;
+}
+section {
+  height: 100vh;
+  background-color: aqua;
+}
