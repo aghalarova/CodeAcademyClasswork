@@ -36,12 +36,53 @@ header {
 }
 a {
   text-decoration: none;
-  color: blueviolet;
+  color: rgb(87, 6, 73);
 }
 
 .fa-solid.fa-bars {
   display: none;
 }
+
+
+
+
+.container-1{
+  background-color: rgb(124, 209, 181);
+}
+.footer{
+  display: flex;
+  gap: 50px;
+}
+.left, .right{
+  width: 50%;
+  padding: 30px;
+}
+.right{
+  display: flex;
+  justify-content: space-between;
+}
+.left{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+a{
+  text-decoration: none;
+  flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 1200px) {
   .container {
