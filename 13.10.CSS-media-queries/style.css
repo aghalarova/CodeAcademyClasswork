@@ -19,7 +19,7 @@ header .header nav ul {
   margin: 0 auto;
 }
 header {
-  background-color: bisque;
+  background-color: rgb(9, 91, 56);
 }
 .header {
   padding: 10px;
@@ -33,63 +33,59 @@ header {
 .log-in {
   background-color: transparent;
   border-style: none;
+  color: aliceblue;
 }
 a {
   text-decoration: none;
-  color: rgb(87, 6, 73);
+  color: rgb(255, 252, 255);
 }
-
+h1 {
+  color: aliceblue;
+}
 .fa-solid.fa-bars {
   display: none;
 }
 
-
-
-
-.container-1{
-  background-color: rgb(124, 209, 181);
+.container-1 {
+  background-color: rgb(27, 101, 76);
+  color: aliceblue;
 }
-.footer{
+.footer {
   display: flex;
   gap: 50px;
 }
-.left, .right{
+.left,
+.right {
   width: 50%;
   padding: 30px;
 }
-.right{
+.right {
   display: flex;
   justify-content: space-between;
 }
-.left{
+.left {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-a{
-  text-decoration: none;
-  flex-wrap: wrap;
+h3 {
+  font-size: 30px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
+a {
+  text-decoration: none;
+  /* color: rgb(225, 225, 225); */
+  display: flex;
+  flex-direction: column;
+}
+.text {
+  padding: 10px 0;
+}
 
 @media screen and (max-width: 1200px) {
   .container {
     padding: 0 5%;
   }
 }
-
 @media screen and (max-width: 767px) {
   .header .fa-bars {
     display: block;
