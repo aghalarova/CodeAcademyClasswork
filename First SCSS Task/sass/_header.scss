@@ -1,0 +1,20 @@
+header {
+  background-color: $primary-color;
+  .header {
+    @include flex(space-between);
+   margin: 15px;
+   padding: 10px;
+    nav {
+      ul {
+        display: flex;
+        gap: 80px;
+      }
+      a {
+        color: wheat;
+      }
+    }
+    .demo {
+      @extend %btn;
+    }
+  }
+}
