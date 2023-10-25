@@ -78,7 +78,6 @@ header .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px;
   padding: 20px 0;
 }
 header .header .font {
@@ -100,9 +99,11 @@ header .header nav ul a {
   }
 }
 
-body {
+.bg {
   background-image: url("../images/cover.svg");
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 section .section {
@@ -113,6 +114,7 @@ section .text {
   justify-content: space-between;
   align-items: start;
   flex-direction: column;
+  padding: 5rem 0;
 }
 @media screen and (max-width: 767px) {
   section .text .text {
@@ -170,7 +172,7 @@ section .boxes {
   justify-content: center;
   align-items: center;
   position: relative;
-  top: 150px;
+  top: 110px;
   gap: 80px;
   line-height: 25px;
 }
@@ -181,7 +183,7 @@ section .box {
   gap: 20px;
   color: #291f7c;
   box-shadow: 6px 6px 3px rgb(121, 117, 117);
-  width: 20%;
+  width: 30%;
 }
 section .box-one {
   background-color: #291f7c;
@@ -236,7 +238,6 @@ section .box h2 {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  width: 50%;
 }
 .content .bottom {
   display: flex;

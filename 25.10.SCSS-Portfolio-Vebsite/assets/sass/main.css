@@ -1,0 +1,232 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 0 5%;
+  }
+}
+
+#header .button button {
+  border: none;
+  background-color: transparent;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+}
+
+section button {
+  border: none;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#header {
+  background-color: #291f7c;
+}
+#header nav a {
+  color: rgb(255, 255, 255);
+}
+#header .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+section #portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .text {
+  max-width: 500px;
+  padding: 20px;
+  text-align: center;
+}
+section .text h1 {
+  font-size: 72px;
+  color: rgb(255, 255, 255);
+}
+section .text p {
+  color: rgb(148, 145, 145);
+  line-height: 25px;
+}
+
+.branding {
+  background-color: rgb(151, 125, 125);
+  padding: 25px;
+}
+.branding nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.branding nav ul a {
+  color: #391400;
+}
+
+section .box {
+  position: relative;
+}
+section .sofa {
+  position: absolute;
+  bottom: 1%;
+  left: 5%;
+}
+section .sofa h3 {
+  color: rgb(255, 255, 255);
+  padding: 10px;
+}
+section .boxes {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#main {
+  background-color: rgb(151, 125, 125);
+}/*# sourceMappingURL=main.css.map */
