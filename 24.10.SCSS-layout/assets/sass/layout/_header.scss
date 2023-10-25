@@ -1,17 +1,29 @@
+// HEADER
 header {
-//   background-color: $primary-color;
+  color: $primary-color;
   .header {
     @include flex(space-between);
     margin: 10px;
-    padding: 10px;
-   
+    padding: 20px 0;
+    .font {
+      display: none;
+    }
+    h3 {
+      font-size: 20px;
+    }
     nav {
       ul {
-      
         display: flex;
         gap: 80px;
+        a {
+          color: $primary-color;
+        }
       }
-    
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .header nav {
+      display: none;
     }
   }
 }

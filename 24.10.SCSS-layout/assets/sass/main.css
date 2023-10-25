@@ -62,20 +62,53 @@ a {
   }
 }
 
+body {
+  background-image: url("../images/cover.svg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section .text .button {
+  padding: 8px;
+  color: rgb(255, 255, 255);
+  border: none;
+  background-color: rgb(160, 55, 3);
+  border-radius: 15px;
+  width: 120px;
+}
+
+header {
+  color: #291f7c;
+}
 header .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 10px;
-  padding: 10px;
+  padding: 20px 0;
+}
+header .header .font {
+  display: none;
+}
+header .header h3 {
+  font-size: 20px;
 }
 header .header nav ul {
   display: flex;
   gap: 80px;
 }
+header .header nav ul a {
+  color: #291f7c;
+}
+@media screen and (max-width: 767px) {
+  header .header nav {
+    display: none;
+  }
+}
 
-section .legal {
-  color: #1b0aad;
+section .section {
+  width: 50%;
 }
 section .text {
   display: flex;
@@ -83,5 +116,159 @@ section .text {
   align-items: start;
   flex-direction: column;
   margin: 10px;
-  padding: 10px;
+  padding: 20px 20px;
+  background-size: cover;
+}
+@media screen and (max-width: 767px) {
+  section .text .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+  }
+}
+section .text .legal {
+  color: #291f7c;
+}
+section .text h4 {
+  width: 60%;
+}
+@media screen and (max-width: 767px) {
+  section .text h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+section .text .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  padding: 20px 0;
+}
+section .text .button-2 {
+  background-color: transparent;
+  color: rgb(160, 55, 3);
+  border: 1px solid;
+}
+section .text h1 {
+  font-size: 40px;
+  padding: 20px 0;
+}
+@media screen and (max-width: 767px) {
+  section .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+section .boxes {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  top: 100px;
+}
+section .box {
+  margin: 10px;
+  padding: 20px;
+  background-color: rgb(236, 235, 235);
+  gap: 10px;
+  color: #291f7c;
+  box-shadow: 6px 6px 3px rgb(121, 117, 117);
+  width: 10%;
+}
+section .box-one {
+  background-color: #291f7c;
+  color: rgb(255, 255, 255);
+}
+section .box h2 {
+  font-size: 25px;
+}
+@media screen and (max-width: 767px) {
+  section .boxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  section .box {
+    width: 20%;
+  }
+}
+
+.grey {
+  background-color: rgb(242, 238, 233);
+  margin: 40px 0;
+}
+
+.content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px 0;
+}
+.content .top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content .top h1 {
+  font-size: 30px;
+}
+.content .top p {
+  display: flex;
+  justify-content: center center;
+  align-items: center;
+  padding: 15px;
+}
+.content .bottom {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  padding: 30px;
+}
+.content .box-a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: rgb(255, 255, 255);
+  width: 150px;
+  height: 150px;
+}
+.content .box-a h1 {
+  font-size: 30px;
+}
+.content .box-a p {
+  font-size: 15px;
+}
+@media screen and (max-width: 767px) {
+  .content .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .content .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+  }
 }/*# sourceMappingURL=main.css.map */

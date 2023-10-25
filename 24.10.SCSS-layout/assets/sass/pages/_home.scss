@@ -1,11 +1,146 @@
+// MAIN-1
+
 section {
-  .legal {
-    color: $primary-color;
+  .section {
+    width: 50%;
   }
-  .text{
+  .text {
     @include flex(space-between, start);
     flex-direction: column;
     margin: 10px;
-    padding: 10px;
+    padding: 20px 20px;
+    background-size: cover;
+    @media screen and (max-width: 767px) {
+      .text {
+        @include flex();
+        flex-direction: column;
+        width: 50%;
+      }
+    }
+    .legal {
+      color: $primary-color;
+    }
+    h4 {
+      width: 60%;
+      @media screen and (max-width: 767px) {
+        @include flex();
+        flex-direction: column;
+        width: 100%;
+      }
+    }
+
+    .buttons {
+      @include flex();
+      flex-direction: row;
+      column-gap: 10px;
+      padding: 20px 0;
+    }
+    .button {
+      @extend %btn;
+    }
+    .button-2 {
+      background-color: transparent;
+      color: $secondary;
+      border: 1px solid;
+    }
+    h1 {
+      font-size: 40px;
+      padding: 20px 0;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .buttons {
+      @include flex();
+      flex-direction: column;
+    }
+  }
+}
+
+// MAIN-2
+section {
+  .boxes {
+    @include flex(space-evenly);
+    position: relative;
+    top: 100px;
+  }
+  .box {
+    margin: 10px;
+    padding: 20px;
+    background-color: rgb(236, 235, 235);
+    gap: 10px;
+    color: $primary-color;
+    box-shadow: 6px 6px 3px rgb(121, 117, 117);
+    width: 10%;
+  }
+  .box-one {
+    background-color: $primary-color;
+    color: $third;
+  }
+  .box h2 {
+    font-size: 25px;
+  }
+  @media screen and (max-width: 767px) {
+    .boxes {
+      @include flex(space-between);
+      flex-direction: column;
+      width: 100%;
+    }
+    .box {
+      width: 20%;
+    }
+  }
+}
+// MAIN-3
+.grey {
+  background-color: rgb(242, 238, 233);
+  margin: 40px 0;
+}
+
+.content {
+  @include flex(space-evenly);
+  flex-direction: column;
+  padding: 100px 0;
+  .top {
+    @include flex();
+    flex-direction: column;
+    h1 {
+      font-size: 30px;
+    }
+    p {
+      @include flex(center center);
+      padding: 15px;
+    }
+  }
+
+  .bottom {
+    @include flex(space-evenly);
+    flex-direction: row;
+    gap: 20px;
+    padding: 30px;
+  }
+  .box-a {
+    @include flex();
+    flex-direction: column;
+    gap: 20px;
+    background-color: $four;
+    width: 150px;
+    height: 150px;
+    h1 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .bottom {
+      @include flex();
+      flex-direction: column;
+    }
+    .top {
+      @include flex();
+      flex-direction: column;
+      width: 50%;
+    }
   }
 }
