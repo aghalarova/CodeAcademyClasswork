@@ -1,5 +1,8 @@
 // MAIN-1
-
+body{
+  background-image: url("../images/cover.svg");
+ background-repeat: no-repeat;
+}
 section {
   .section {
     width: 50%;
@@ -7,9 +10,6 @@ section {
   .text {
     @include flex(space-between, start);
     flex-direction: column;
-    margin: 10px;
-    padding: 20px 20px;
-    background-size: cover;
     @media screen and (max-width: 767px) {
       .text {
         @include flex();
@@ -59,18 +59,22 @@ section {
 // MAIN-2
 section {
   .boxes {
-    @include flex(space-evenly);
+    @include flex();
     position: relative;
-    top: 100px;
+    top: 150px;
+    gap: 80px;
+    line-height: 25px;
   }
   .box {
-    margin: 10px;
-    padding: 20px;
-    background-color: rgb(236, 235, 235);
-    gap: 10px;
+    margin: 100px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    gap: 20px;
     color: $primary-color;
     box-shadow: 6px 6px 3px rgb(121, 117, 117);
-    width: 10%;
+    width: 20%;
+   
+   
   }
   .box-one {
     background-color: $primary-color;
@@ -92,7 +96,7 @@ section {
 }
 // MAIN-3
 .grey {
-  background-color: rgb(242, 238, 233);
+  background-color: rgb(255, 255, 255);
   margin: 40px 0;
 }
 
@@ -101,14 +105,20 @@ section {
   flex-direction: column;
   padding: 100px 0;
   .top {
+    .lorem-15 {
+      @include flex();
+      align-items: center;
+    }
     @include flex();
     flex-direction: column;
     h1 {
+      color: $primary-color;
       font-size: 30px;
     }
     p {
-      @include flex(center center);
+      @include flex();
       padding: 15px;
+      width: 50%;
     }
   }
 
@@ -117,14 +127,16 @@ section {
     flex-direction: row;
     gap: 20px;
     padding: 30px;
+    .icon-3 {
+      color: #d0a144;
+    }
   }
   .box-a {
     @include flex();
     flex-direction: column;
     gap: 20px;
-    background-color: $four;
     width: 150px;
-    height: 150px;
+    
     h1 {
       font-size: 30px;
     }

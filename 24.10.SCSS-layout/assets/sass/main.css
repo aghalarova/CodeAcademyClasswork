@@ -62,13 +62,6 @@ a {
   }
 }
 
-body {
-  background-image: url("../images/cover.svg");
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 section .text .button {
   padding: 8px;
   color: rgb(255, 255, 255);
@@ -107,6 +100,11 @@ header .header nav ul a {
   }
 }
 
+body {
+  background-image: url("../images/cover.svg");
+  background-repeat: no-repeat;
+}
+
 section .section {
   width: 50%;
 }
@@ -115,9 +113,6 @@ section .text {
   justify-content: space-between;
   align-items: start;
   flex-direction: column;
-  margin: 10px;
-  padding: 20px 20px;
-  background-size: cover;
 }
 @media screen and (max-width: 767px) {
   section .text .text {
@@ -172,19 +167,21 @@ section .text h1 {
 
 section .boxes {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   position: relative;
-  top: 100px;
+  top: 150px;
+  gap: 80px;
+  line-height: 25px;
 }
 section .box {
-  margin: 10px;
-  padding: 20px;
-  background-color: rgb(236, 235, 235);
-  gap: 10px;
+  margin: 100px;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  gap: 20px;
   color: #291f7c;
   box-shadow: 6px 6px 3px rgb(121, 117, 117);
-  width: 10%;
+  width: 20%;
 }
 section .box-one {
   background-color: #291f7c;
@@ -207,7 +204,7 @@ section .box h2 {
 }
 
 .grey {
-  background-color: rgb(242, 238, 233);
+  background-color: rgb(255, 255, 255);
   margin: 40px 0;
 }
 
@@ -224,14 +221,22 @@ section .box h2 {
   align-items: center;
   flex-direction: column;
 }
+.content .top .lorem-15 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+}
 .content .top h1 {
+  color: #291f7c;
   font-size: 30px;
 }
 .content .top p {
   display: flex;
-  justify-content: center center;
+  justify-content: center;
   align-items: center;
   padding: 15px;
+  width: 50%;
 }
 .content .bottom {
   display: flex;
@@ -241,15 +246,16 @@ section .box h2 {
   gap: 20px;
   padding: 30px;
 }
+.content .bottom .icon-3 {
+  color: #d0a144;
+}
 .content .box-a {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 20px;
-  background-color: rgb(255, 255, 255);
   width: 150px;
-  height: 150px;
 }
 .content .box-a h1 {
   font-size: 30px;
